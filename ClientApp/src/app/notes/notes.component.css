@@ -1,0 +1,124 @@
+.notes-section {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.notes-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heding {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.notes+.notes {
+    margin-top: 40px;
+}
+
+.notes {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.note-creation {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-creation label {
+    margin-bottom: 15px;
+}
+
+.note-creation input {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+.note-creation button {
+    width: 200px;
+    background-color: #222355;
+    color: #e7e7e7;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 15px;
+    position: relative;
+    bottom: 0;
+    transition: .2s ease-in;
+}
+
+.note-creation button:hover {
+    bottom: 5px;
+}
+
+.note-creation button:active {
+    background-color: #3638c9;
+}
+
+.note-cell+.note-cell {
+    margin-top: 20px;
+}
+
+.note-cell {
+    border: 1px solid black;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.noteData-cell {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button+button {
+    margin-left: 20px;
+}
+
+.delete-btn {
+    outline: none;
+    padding: 0 10px; 
+    background-color: #df7a7a;
+    color: #e7e7e7;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    transform: scale();
+    transition: ease-in .2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.delete-btn:active {
+    background-color: #dd3636;
+}
+
+.update-btn {
+    outline: none;
+    padding: 0 10px; 
+    background-color: #222355;
+    color: #e7e7e7;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    transform: scale();
+    transition: ease-in .2s;
+}
+
+.update-btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.update-btn:active {
+    background-color: #3638c9;
+}

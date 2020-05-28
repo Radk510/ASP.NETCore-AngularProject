@@ -1,0 +1,25 @@
+<section class="notes-section">
+    <div *ngIf="note">
+        <div class="container">
+            <div class="notes-section-content">
+                <div class="heding">
+                    Update your note here...
+                </div>
+                <div class="add-notes notes">
+                    <div class="note-cell">
+                        <div class="note-update">
+                            <label for="stringNote">Update note</label>
+                            <input 
+                                    type="text" 
+                                    [(ngModel)]="note.stringNote"  
+                                    id="stringNote" 
+                                    placeholder="Type your changes here...">
+                            <button (click)="updateNote()">Update note</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

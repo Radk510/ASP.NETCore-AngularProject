@@ -1,0 +1,33 @@
+.header {
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.header-content {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content__logo a {
+    color: #292929;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.header-content__links ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-content__links ul li+li {
+    margin-left: 20px;
+}
+
+.header-content__links ul li a {
+    color: #292929;
+    font-size: 20px;
+}

@@ -1,0 +1,32 @@
+<section class="notes-section">
+    <div class="container">
+        <div class="notes-section-content">
+            <div class="heding">
+                Your notes here...
+            </div>
+            <div class="add-notes notes">
+                <div class="note-cell">
+                    <div class="note-creation">
+                        <label for="stringNote">Add new note</label>
+                        <input #stringNote 
+                                type="text" 
+                                name='stringNote' 
+                                id="stringNote" 
+                                placeholder="Type your note...">
+                        <button (click)="addNote(stringNote.value); stringNote.value=''" type="submit">
+                            Create note</button>
+                    </div>
+                </div>
+            </div>
+            <div class="notes">
+                <div class="note-cell noteData-cell" *ngFor="let note of notes">
+                    <div class="note-text">{{note.stringNote}}</div>
+                    <div class="buttons">
+                        <button class="update-btn" routerLink="/update/{{note.id}}">Update</button>
+                        <button class="delete-btn" (click)="deleteNote(note.id)">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
